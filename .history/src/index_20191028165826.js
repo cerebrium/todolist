@@ -4,6 +4,12 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+let myData = [
+    'Buy Ice Cream',
+    'Eat Ice Cream',
+    'Go To The Gym',
+]
+
+ReactDOM.render(<App theList = {myData}/>, document.getElementById('root'));
 
 serviceWorker.unregister();
